@@ -6,7 +6,7 @@ const ProfileSummary = () => {
  
 
   return (
-    <div className='bg-black text-white text-center py-16'>
+    <div className='bg-black mt-8 text-white text-center py-16' id="ProfileSummary">
         <img src={ProfileImage} alt="" 
         className='mx-auto mb-8 w-48 h-48 rounded-full object-cover transform 
         transition-transform duration-300 hover:scale-105'/>
