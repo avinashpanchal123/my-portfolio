@@ -59,3 +59,19 @@
     transform: rotateX(-90deg) translateZ(100px);
   }
   
+
+  .skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .skill-icon {
+    font-size: 2rem;
+  }

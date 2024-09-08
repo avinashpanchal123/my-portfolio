@@ -4,6 +4,7 @@ import ProfileSummary from './components/ProfileSummary'
 import About from './components/About';
 import SkillsRotator from './components/Skills'
 import Projects from './components/Projects'
+import Contact from './components/Contact';
 
 function App() {
   
@@ -14,7 +15,7 @@ function App() {
     <About />
     <SkillsRotator/>
     <Projects />
-    {/* <h1>Hello</h1> */}
+    <Contact/>
     </>
   )
 }

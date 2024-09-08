@@ -1,5 +1,7 @@
 import React from "react";
 import SnakesAndLadders from "./../assets/snake-ladders-game.png";
+import PorterCLone from "./../assets/porter-clone.png";
+
 // import bookMSImage from "../assets/admin-dashboard.png";
 
 const projects = [
@@ -12,17 +14,17 @@ const projects = [
   },
   {
     id: 2,
-    name: "Blog App",
+    name: "Porter App Clone",
     technologies: "MERN Stack",
-    image: SnakesAndLadders,
-    github: "https://github.com/avinashpanchal123/snakes-and-ladders.git",
+    image: PorterCLone,
+    github: "https://github.com/avinashpanchal123/porterClone_Backend",
   },
   {
     id: 3,
-    name: "Book MS",
+    name: "Money Control",
     technologies: "MERN Stack",
     image: SnakesAndLadders,
-    github: "https://github.com/avinashpanchal123/snakes-and-ladders.git",
+    github: "https://github.com/avinashpanchal123/money-control",
   },
 ];
 
