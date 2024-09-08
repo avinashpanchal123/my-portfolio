@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "./WorkExperience";
 
 const About = () => {
   return (
@@ -13,46 +14,12 @@ const About = () => {
           /> */}
           <div className="flex-1">
             <p className="text-lg mb-8">
-            Enthusiastic and self-motivated Software Engineer with 2+ years of experience in developing and
+            Enthusiastic and self-motivated Software Engineer With over 2 years of experience in developing and
             implementing software solutions. Proficient in multiple programming languages and platforms, with a
             strong understanding of software development lifecycle. Seeking a challenging position where I can utilize
             my technical expertise to drive impactful results and contribute to the success of a dynamic team.
             </p>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  React JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Node JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
-                </div>
-              </div>
-            </div>
+             <Resume/>
             <div className="mt-12 flex justify-center text-center">
                 <div>
                     <h3 className="text-2xl font-bold text-transparent bg-clip-text 

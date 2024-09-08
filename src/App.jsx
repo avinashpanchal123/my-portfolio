@@ -7,15 +7,17 @@ import Projects from './components/Projects'
 import Contact from './components/Contact';
 
 function App() {
-  
+
   return (
     <>
-    <Navbar />
-    <ProfileSummary />  
-    <About />
-    <SkillsRotator/>
-    <Projects />
-    <Contact/>
+      <div className='bg-black'>
+        <Navbar />
+        <ProfileSummary />
+        <About />
+        <SkillsRotator />
+        <Projects />
+        <Contact />
+      </div>
     </>
   )
 }
