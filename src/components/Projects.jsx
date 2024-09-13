@@ -1,5 +1,6 @@
 import React from "react";
 import SnakesAndLadders from "./../assets/snake-ladders-game.png";
+import MoneyControl from './../assets/money-control.png'
 import PorterCLone from "./../assets/porter-clone.png";
 
 // import bookMSImage from "../assets/admin-dashboard.png";
@@ -8,22 +9,22 @@ const projects = [
   {
     id: 1,
     name: "Snakes-Ladders-Game",
-    technologies: "MERN Stack",
+    technologies: "HTML-CSS-Javascipt",
     image: SnakesAndLadders,
     github: "https://github.com/avinashpanchal123/snakes-and-ladders.git",
   },
   {
     id: 2,
     name: "Porter App Clone",
-    technologies: "MERN Stack",
+    technologies: "HTML-CSS-JS-Node-Express-MongoDB",
     image: PorterCLone,
     github: "https://github.com/avinashpanchal123/porterClone_Backend",
   },
   {
     id: 3,
     name: "Money Control",
-    technologies: "MERN Stack",
-    image: SnakesAndLadders,
+    technologies: "MySQL-Express-React-Node",
+    image: MoneyControl,
     github: "https://github.com/avinashpanchal123/money-control",
   },
 ];

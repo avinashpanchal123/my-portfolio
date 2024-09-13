@@ -14,7 +14,7 @@ const WorkExperience = () => {
         {
             title: 'Software Engineer',
             company: 'Cointab Software Pvt. Ltd.',
-            duration: 'Jan 2022 - Aug 2024',
+            duration: 'May 2022 - Aug 2024',
             description: [
                 "Implemented an automated Git rollback feature to minimize downtime and ensure stability.",
                 "Developed a version control system for tracking changes in a reconciliation system.",
