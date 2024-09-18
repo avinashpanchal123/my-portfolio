@@ -46,8 +46,7 @@ const Projects = () => {
               w-full h-48 object-cover" />
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
-              <a href={project.github} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-md" target="_blank" 
+              <a href={project.github} className="bg-emerald-400 text-white px-4 py-2 rounded-md" target="_blank" 
               rel="noopener noreferrer">GitHub</a>
             </div>
           ))}

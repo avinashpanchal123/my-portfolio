@@ -52,7 +52,7 @@ const Contact = () => {
                     rows="5"
                     placeholder='Enter You Message'/>
                 </div>
-                <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
+                <button className='bg-emerald-400 text-white hidden md:inline
             transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-md'>Send</button>
             </form>
           </div>
