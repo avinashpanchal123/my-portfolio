@@ -1,4 +1,5 @@
-import React from 'react';
+import {useContext} from 'react';
+import { ThemeContext } from './context/themeContext';
 
 const ExperienceItem = ({ title, company, duration, description }) => (
     <div className="bg-black text-white shadow-md rounded-lg p-6 mb-4 border border-gray-200">
@@ -10,6 +11,8 @@ const ExperienceItem = ({ title, company, duration, description }) => (
 );
 
 const WorkExperience = () => {
+    const { isDarkMode, changeTheme } = useContext(ThemeContext);
+
     const experiences = [
         {
             title: 'Software Engineer',
@@ -38,7 +41,7 @@ const WorkExperience = () => {
             <h2 className="text-3xl font-bold text-white-900 mb-6">Professional Experience</h2>
             {experiences.map((exp, index) => (
                 < div key={index}>
-                    <div className="bg-black text-white shadow-md rounded-lg p-6 mb-4 border border-gray-200">
+                    <div className={`${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} shadow-md rounded-lg p-6 mb-4 border border-gray-200`}>
                         <h3 className="text-xl font-semibold text-white-800">{exp.title}</h3>
                         <p className="text-white-600">{exp.company}</p>
                         <p className="text-white-500 text-sm mb-4">{exp.duration}</p>

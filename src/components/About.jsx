@@ -1,9 +1,11 @@
-import React from "react";
+import {useContext} from "react";
 import Resume from "./WorkExperience";
-
+import { ThemeContext } from './context/themeContext';
 const About = () => {
+  const { isDarkMode, changeTheme } = useContext(ThemeContext);
+
   return (
-    <div className="bg-black text-white py-20" id="about">
+    <div className={`${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`} id="about">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">

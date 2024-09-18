@@ -1,4 +1,5 @@
-import React from 'react';
+import {useContext} from 'react';
+import { ThemeContext } from './context/themeContext';
 import './Skills3D.css'; // Import the CSS file for 3D styling
 import { FaReact, FaNodeJs, FaDatabase, FaPython } from 'react-icons/fa'; // Import icons from react-icons
 import { SiExpress, SiMysql } from 'react-icons/si'; // Import specific icons for Express.js and MySQL
@@ -13,8 +14,10 @@ const skills = [
 ];
 
 const Skills3D = () => {
+  const { isDarkMode, changeTheme } = useContext(ThemeContext);
+
   return (
-    <div className="bg-black text-white py-20" id="skills">
+    <div className={`${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} py-20`}id="skills">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mt-20 mb-20">My Skills</h2>
         <div className="flex flex-col md:flex-row mt-10 mb-20 items-center gap-8">
