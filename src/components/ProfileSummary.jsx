@@ -11,9 +11,13 @@ const ProfileSummary = () => {
 
   return (
     <div className={`${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} h-screen flex flex-col items-center justify-center`} id="ProfileSummary">
-      <img src={ProfileImage} alt=""
-        className='mx-auto mb-8 w-48 h-48 rounded-full object-cover transform 
-        transition-transform duration-300 hover:scale-105'/>
+         <img
+        src={ProfileImage}
+        alt="Profile"
+        className={`mx-auto mb-8 w-48 h-48 rounded-full object-cover transform 
+          transition-transform duration-300 hover:scale-105
+          ${!isDarkMode ? 'border-2 border-gray-200' : ''}`}
+      />
       <h1 className='text-4xl font-bold'>
         Hello! &#128075; I'm {name},
 
