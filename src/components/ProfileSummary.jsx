@@ -76,7 +76,7 @@ const ProfileSummary = () => {
           </Button> */}
           <a
             href="/assets/Avinash_Panchal_Resume.pdf"
-            download="Avinash_Panchal_Resume.pdf"
+            download="Avinash-Panchal-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-400 text-white px-4 py-2 rounded-md"
