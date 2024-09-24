@@ -38,14 +38,14 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
             <a href="#skills" onClick={() => handleScroll(skillRef.current)} className='hover:text-gray-400 mt-1'>
               Skills
             </a>
-            <a href="#project" onClick={() => handleScroll(projectsRef.current)} className='hover:text-gray-400 mt-1'>
+            <a href="#project" onClick={() => handleScroll(projectsRef.current)} className='hover:text-gray-400'>
               Projects
             </a>
             <a
               href="/assets/Avinash-Panchal-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-400 mt-1"
+              className="hover:text-gray-400"
               onClick={(e) => {
                 e.preventDefault();
                 const newTab = window.open('/assets/Avinash-Panchal-Resume.pdf', '_blank');
@@ -59,6 +59,9 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
             >
               Resume
             </a>
+            <a href="#contact" onClick={() => { setIsMenuOpen(false); handleScroll(contactRef.current); }} className='hover:text-gray-400'>
+                Contact
+              </a>
             <button
               className="flex items-center bg-gradient-to-r text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               onClick={handleTheme}
