@@ -11,7 +11,7 @@ const ProfileSummary = () => {
   const { isDarkMode, changeTheme } = useContext(ThemeContext);
 
   return (
-    <div className={`${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} h-screen flex flex-col items-center justify-center`} id="ProfileSummary">
+    <div className={`${isDarkMode ? 'bg-gray-900  py-20 text-white' : 'bg-white text-black'} h-screen flex flex-col items-center justify-center`} id="ProfileSummary">
       <img
         src={ProfileImage}
         alt="Profile"
@@ -43,7 +43,6 @@ const ProfileSummary = () => {
 
       </h1>
       <p className={`mt-4 text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} `}>
-        {/* I specialize in building modern and responsive web applications. */}
         Specializing in building and maintaining robust, and scalable web applications with expertise in both frontend and backend technologies.
       </p>
       <div className="flex justify-center mt-20 space-x-6 md:space-x-8 lg:space-x-10">
@@ -69,20 +68,26 @@ const ProfileSummary = () => {
 
 
         <div className="text-center">
-          {/* <Button bg={"#06d6a0"} size={{base:"sm",sm:"sm",md:"md"}} mt={"20px"}>
-            <a href="/Bhavesh_Jain_Resume.pdf" target="_blank" download rel="noreferrer">
-              Resume
-            </a>
-          </Button> */}
           <a
-            href="/assets/Avinash_Panchal_Resume.pdf"
-            download="Avinash_Panchal_Resume.pdf"
+            href="/assets/Avinash-Panchal-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-emerald-400 text-white px-4 py-2 rounded-md"
+            onClick={(e) => {
+              e.preventDefault();
+              const newTab = window.open('/assets/Avinash-Panchal-Resume.pdf', '_blank');
+              setTimeout(() => {
+                const tempLink = document.createElement('a');
+                tempLink.href = '/assets/Avinash-Panchal-Resume.pdf';
+                tempLink.download = 'Avinash-Panchal-Resume.pdf'; 
+                tempLink.click();
+              }, 500); 
+            }}
           >
             Download Resume
           </a>
+
+
 
         </div>
       </div>

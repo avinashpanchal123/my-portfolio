@@ -21,15 +21,17 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
   return (
     <header>
       <nav className=' fixed top-0 left-0 w-full bg-emerald-400 text-white shadow-lg px-8 md:px-16 lg:px-24 w-full z-10'>
-        <div className='container py-2 flex justify-between items-center'>
+        <div className='container py-4 flex justify-between items-center'>
           <div className='text-2xl font-bold'>
             <a href="#" onClick={() => handleScroll(homeRef.current)} className='hover:text-gray-400'>
               Avinash Panchal
             </a>
           </div>
 
-          {/* Desktop Links */}
           <div className='hidden md:flex space-x-6'>
+            <a href="#" onClick={() => handleScroll(infoRef.current)} className='hover:text-gray-400 mt-1'>
+              Home
+            </a>
             <a href="#about" onClick={() => handleScroll(infoRef.current)} className='hover:text-gray-400 mt-1'>
               About Me
             </a>
@@ -39,8 +41,23 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
             <a href="#project" onClick={() => handleScroll(projectsRef.current)} className='hover:text-gray-400 mt-1'>
               Projects
             </a>
-            <a href="#contact" onClick={() => handleScroll(contactRef.current)} className='hover:text-gray-400 mt-1'>
-              Contact
+            <a
+              href="/assets/Avinash-Panchal-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-400 mt-1"
+              onClick={(e) => {
+                e.preventDefault();
+                const newTab = window.open('/assets/Avinash-Panchal-Resume.pdf', '_blank');
+                setTimeout(() => {
+                  const tempLink = document.createElement('a');
+                  tempLink.href = '/assets/Avinash-Panchal-Resume.pdf';
+                  tempLink.download = 'Avinash-Panchal-Resume.pdf';
+                  tempLink.click();
+                }, 500);
+              }}
+            >
+              Resume
             </a>
             <button
               className="flex items-center bg-gradient-to-r text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -50,7 +67,6 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
             </button>
           </div>
 
-          {/* Hamburger Icon for Mobile */}
           <div className='md:hidden'>
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
               <FaBars className="w-6 h-6" />
@@ -58,7 +74,6 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className='md:hidden'>
             <div className='flex flex-col space-y-4 p-4 bg-emerald-400'>
