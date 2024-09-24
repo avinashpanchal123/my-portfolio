@@ -29,13 +29,13 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
           </div>
 
           <div className='hidden md:flex space-x-6'>
-            <a href="#" onClick={() => handleScroll(infoRef.current)} className='hover:text-gray-400 mt-1'>
+            <a href="#" onClick={() => handleScroll(infoRef.current)} className='hover:text-gray-400'>
               Home
             </a>
-            <a href="#about" onClick={() => handleScroll(infoRef.current)} className='hover:text-gray-400 mt-1'>
+            <a href="#about" onClick={() => handleScroll(infoRef.current)} className='hover:text-gray-400'>
               About Me
             </a>
-            <a href="#skills" onClick={() => handleScroll(skillRef.current)} className='hover:text-gray-400 mt-1'>
+            <a href="#skills" onClick={() => handleScroll(skillRef.current)} className='hover:text-gray-400'>
               Skills
             </a>
             <a href="#project" onClick={() => handleScroll(projectsRef.current)} className='hover:text-gray-400'>
