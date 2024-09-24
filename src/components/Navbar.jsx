@@ -54,7 +54,7 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
                   tempLink.href = '/assets/Avinash-Panchal-Resume.pdf';
                   tempLink.download = 'Avinash-Panchal-Resume.pdf';
                   tempLink.click();
-                }, 500);
+                }, 1000);
               }}
             >
               Resume
