@@ -20,7 +20,7 @@ const Navbar = ({ projectsRef, infoRef, skillRef, contactRef, homeRef }) => {
 
   return (
     <header>
-      <nav className='bg-emerald-400 text-white shadow-lg px-8 md:px-16 lg:px-24 w-full z-10'>
+      <nav className=' fixed top-0 left-0 w-full bg-emerald-400 text-white shadow-lg px-8 md:px-16 lg:px-24 w-full z-10'>
         <div className='container py-2 flex justify-between items-center'>
           <div className='text-2xl font-bold'>
             <a href="#" onClick={() => handleScroll(homeRef.current)} className='hover:text-gray-400'>
