@@ -16,7 +16,7 @@
 </p>
 
  <h2>🌐 Deployed Link</h2>
-    <p>You can check out the live app <a href="https://https://avinash-panchal-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+    <p>You can check out the live app <a href="https://avinash-panchal-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">here</a>.</p>
     <h2>🛠️ Key Features</h2>
 
 <h2>Features</h2>
