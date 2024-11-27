@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import SnakesAndLadders from "/assets/snake-ladders-game.png";
 import MoneyControl from '/assets/money-control.png';
-import PorterCLone from "/assets/porter-clone.png";
+import Wordle from "/assets/Wordle.png";
 import { ThemeContext } from "./context/themeContext";
 
 const projects = [
@@ -23,15 +23,15 @@ const projects = [
     deployed: "https://snakes-and-ladders-zbrz.onrender.com/", 
     description: "A classic board game where two players take turns rolling a die to navigate from start to finish, encountering snakes and ladders along the way."
   },
-  // {
-  //   id: 3,
-  //   name: "Porter App Clone",
-  //   technologies: "HTML-CSS-JS-Node-Express-MongoDB",
-  //   image: PorterCLone,
-  //   github: "https://github.com/avinashpanchal123/porterClone_Backend",
-  //   deployed: "https://porter-app-clone-demo.com", 
-  //   description: "A clone of the popular logistics platform, developed with full-stack technologies, simulating functionalities like booking and tracking."
-  // }
+  {
+    id: 3,
+    name: "Wordle Game",
+    technologies: "HTML-CSS-JS-React",
+    image: Wordle,
+    github: "https://github.com/avinashpanchal123/Wordle",
+    deployed: "https://wordle-game-two-omega.vercel.app/", 
+    description: "A fun and interactive Wordle-inspired game built using React. Players guess a hidden five-letter word within a limited number of attempts. "
+  }
 ];
 
 const Projects = () => {
