@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
-import ProfileImage from '/assets/my-profile.png';
+import ProfileImage from '/assets/my-profile.jpeg';
 import { ThemeContext } from './context/themeContext';
 import Typewriter from "typewriter-effect";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
