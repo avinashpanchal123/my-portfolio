@@ -15,6 +15,18 @@ const WorkExperience = () => {
 
     const experiences = [
         {
+            title: 'Senior Software Engineer',
+            company: 'Nexsales Software Pvt. Ltd.',
+            duration: 'Dec 2024 - Present',
+            description: [
+                "Leading the design and architecture of a data-building platform used to create targeted campaigns for clients.",
+                "Defined scalable database schemas, system workflows, and integration strategies to support evolving business requirements.",
+                "Oversaw system-level design decisions including performance optimization and modular service patterns.",
+                "Managed a team of developers by assigning tasks, reviewing code, and ensuring timely delivery of features.",
+                "Actively participating in product planning and feature scoping"
+            ]
+        },
+        {
             title: 'Software Engineer',
             company: 'Cointab Software Pvt. Ltd.',
             duration: 'May 2022 - Aug 2024',
@@ -23,17 +35,10 @@ const WorkExperience = () => {
                 "Developed a version control system for tracking changes in a reconciliation system.",
                 "Designed a real-time monitoring tool for system performance analysis and optimization.",
                 "Engineered a solution for locale-based number formatting, enhancing user experience.",
-                "Provided guidance to new team members and resolved technical issues efficiently.",
+                "Guided new team members and resolved technical issues efficiently.",
                 "Proposed and implemented improvements to enhance project performance."
             ]
         },
-        // {
-        //   title: 'Backend Developer',
-        //   company: 'BrightChamps',
-        //   duration: 'Jul 2021 - Dec 2021',
-        //   description: 'Worked on various backend features and services, including API development and database management.'
-        // }
-        // Add more experiences as needed
     ];
 
     return (
@@ -69,7 +74,7 @@ const Education = () => (
         <h2 className="text-3xl font-bold text-white-900 mb-6">Education</h2>
         <div className="shadow-md rounded-lg p-6 mb-4 border border-gray-200">
             <h3 className="text-xl font-semibold text-white-800">BSc in Data Science and Application</h3>
-            <p className="text-white-600">Currently pursuing at [IIT Madras]</p>
+            <p className="text-white-600">Currently pursuing at [IITM]</p>
         </div>
     </section>
 );
