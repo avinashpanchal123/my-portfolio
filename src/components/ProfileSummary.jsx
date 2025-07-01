@@ -34,7 +34,7 @@ const ProfileSummary = () => {
               "a Creative Developer",
               "an Innovator",
               "a Software Engineer",
-              "a Coder"
+              "a Programmer"
             ],
             cursor: "|",
             wrapperClassName: "typewriter-text",
