@@ -16,7 +16,7 @@ const WorkExperience = () => {
     const experiences = [
         {
             title: 'Senior Software Engineer',
-            company: 'Nexsales Software Pvt. Ltd.',
+            company: 'Nexsales Solutions Pvt Ltd.',
             duration: 'Dec 2024 - Present',
             description: [
                 "Leading the design and architecture of a data-building platform used to create targeted campaigns for clients.",
