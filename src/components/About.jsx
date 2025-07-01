@@ -12,7 +12,7 @@ const About = () => {
          
           <div className="flex-1">
             <p className="text-lg mb-8">
-            Enthusiastic and self-motivated Software Engineer With over 2 years of experience in developing and
+            Enthusiastic and self-motivated Software Engineer with over 3 years of experience in developing and
             implementing software solutions. Proficient in multiple programming languages and platforms, with a
             strong understanding of software development lifecycle. Seeking a challenging position where I can utilize
             my technical expertise to drive impactful results and contribute to the success of a dynamic team.
@@ -22,7 +22,7 @@ const About = () => {
                 <div>
                     <h3 className="text-2xl font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-green-400 to-blue-500">
-                        2+
+                        3+
                     </h3>
                     <p>Years Experience</p>
                 </div>
